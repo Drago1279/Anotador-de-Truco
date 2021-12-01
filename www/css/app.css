@@ -1,0 +1,421 @@
+/* Your app custom styles here */
+/* poppins-regular - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/poppins-v13-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Poppins Regular'), local('Poppins-Regular'),
+       url('../fonts/poppins-v13-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/poppins-v13-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/poppins-v13-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/poppins-v13-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/poppins-v13-latin-regular.svg#Poppins') format('svg'); /* Legacy iOS */
+}
+/* poppins-italic - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/poppins-v13-latin-italic.eot'); /* IE9 Compat Modes */
+  src: local('Poppins Italic'), local('Poppins-Italic'),
+       url('../fonts/poppins-v13-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/poppins-v13-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/poppins-v13-latin-italic.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/poppins-v13-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/poppins-v13-latin-italic.svg#Poppins') format('svg'); /* Legacy iOS */
+}
+/* poppins-700 - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/poppins-v13-latin-700.eot'); /* IE9 Compat Modes */
+  src: local('Poppins Bold'), local('Poppins-Bold'),
+       url('../fonts/poppins-v13-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/poppins-v13-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/poppins-v13-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/poppins-v13-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/poppins-v13-latin-700.svg#Poppins') format('svg'); /* Legacy iOS */
+}
+/* poppins-700italic - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 700;
+  src: url('../fonts/poppins-v13-latin-700italic.eot'); /* IE9 Compat Modes */
+  src: local('Poppins Bold Italic'), local('Poppins-BoldItalic'),
+       url('../fonts/poppins-v13-latin-700italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/poppins-v13-latin-700italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/poppins-v13-latin-700italic.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/poppins-v13-latin-700italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/poppins-v13-latin-700italic.svg#Poppins') format('svg'); /* Legacy iOS */
+}
+/* poppins-900 - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/poppins-v13-latin-900.eot'); /* IE9 Compat Modes */
+  src: local('Poppins Black'), local('Poppins-Black'),
+       url('../fonts/poppins-v13-latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/poppins-v13-latin-900.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/poppins-v13-latin-900.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/poppins-v13-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/poppins-v13-latin-900.svg#Poppins') format('svg'); /* Legacy iOS */
+}
+/* poppins-900italic - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 900;
+  src: url('../fonts/poppins-v13-latin-900italic.eot'); /* IE9 Compat Modes */
+  src: local('Poppins Black Italic'), local('Poppins-BlackItalic'),
+       url('../fonts/poppins-v13-latin-900italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/poppins-v13-latin-900italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/poppins-v13-latin-900italic.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/poppins-v13-latin-900italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/poppins-v13-latin-900italic.svg#Poppins') format('svg'); /* Legacy iOS */
+}
+@media only screen and (max-height: 480px){
+.seccionSup{
+  display: flex;
+  width: 100%;
+  height: 40px;
+}
+.botonSumar{
+  width: 17%;
+  height: 40px;
+  font-size: 150%;
+  background-color: darkgrey;
+  color: white;
+  text-align: center;
+}
+.nomEq{
+  width: 30%;
+  height: 40px;
+  font-size: 150%;
+  color: darkgrey;
+  text-align: center;
+  padding: 2% 0;
+}
+.seccionInf{
+  display: flex;
+  width: 100%;
+  height: 40px;
+}
+.botonRest{
+  width: 15%;
+  height: 40px;
+  font-size: 150%;
+  background-color: darkgrey;
+  color: white;
+  text-align: center;
+}
+.botFin{
+  width: 20%;
+  height: 40px;
+  font-size: 100%;
+  background-color: darkgrey;
+  color: white;
+  text-align: center;
+}
+.puntaje{
+  width: 25%;
+  height: 40px;
+  font-size: 100%;
+  color: darkgrey;
+  text-align: center;
+  padding: 2% 0;
+}
+.chicos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.linea{
+  width: 100%;
+  height: 35px;
+}
+.xLinea{
+  margin-left: 22%;
+  margin-right: 5%;
+  width: 15%;
+  height: 35px;
+}
+}
+@media only screen and (max-height: 640px){
+.seccionSup{
+  display: flex;
+  width: 100%;
+  height: 60px;
+}
+.botonSumar{
+  width: 17%;
+  height: 55px;
+  font-size: 200%;
+  background-color: darkgrey;
+  color: white;
+  text-align: center;
+}
+.nomEq{
+  width: 30%;
+  height: 60px;
+  font-size: 150%;
+  color: darkgrey;
+  text-align: center;
+  padding: 2% 0;
+}
+.seccionInf{
+  display: flex;
+  width: 100%;
+  height: 60px;
+}
+.botonRest{
+  width: 15%;
+  height: 55px;
+  font-size: 200%;
+  background-color: darkgrey;
+  color: white;
+  text-align: center;
+}
+.botFin{
+  width: 20%;
+  height: 55px;
+  font-size: 150%;
+  background-color: darkgrey;
+  color: white;
+  text-align: center;
+}
+.puntaje{
+  width: 25%;
+  height: 60px;
+  font-size: 100%;
+  color: darkgrey;
+  text-align: center;
+  padding: 2% 0;
+}
+.chicos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.linea{
+  width: 100%;
+  height: 50px;
+}
+.xLinea{
+  margin-left: 22%;
+  width: 15%;
+  height: 45px;
+}
+}
+@media only screen and (max-height: 960px){
+.seccionSup{
+  display: flex;
+  width: 100%;
+  height: 80px;
+}
+.botonSumar{
+  width: 17%;
+  height: 80px;
+  font-size: 200%;
+  background-color: darkgrey;
+  color: white;
+  text-align: center;
+}
+.nomEq{
+  width: 30%;
+  height: 80px;
+  font-size: 150%;
+  color: darkgrey;
+  text-align: center;
+  padding: 3% 0;
+}
+.seccionInf{
+  display: flex;
+  width: 100%;
+  height: 80px;
+}
+.botonRest{
+  width: 15%;
+  height: 80px;
+  font-size: 200%;
+  background-color: darkgrey;
+  color: white;
+  text-align: center;
+}
+.botFin{
+  width: 20%;
+  height: 80px;
+  font-size: 180%;
+  background-color: darkgrey;
+  color: white;
+  text-align: center;
+}
+.puntaje{
+  width: 25%;
+  height: 70px;
+  font-size: 200%;
+  color: darkgrey;
+  text-align: center;
+  padding: 3% 0;
+}
+.chicos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.linea{
+  width: 100%;
+  height: 90px;
+}
+.xLinea{
+  margin-left: 22%;
+  margin-bottom: 3px;
+  width: 15%;
+  height: 65px;
+}
+}
+* {
+	font-family: 'Poppins', Arial, sans-serif;
+}
+.equipo{
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+}
+.equipo .contenedores{
+  width: 60%;
+  height: 50px;
+  margin-top: 40px;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 200%;
+  text-align: center;
+  border: 2px darkgrey;
+}
+.equipo .conten2{
+  margin-bottom: 40px;
+}
+.errorEnRojo{
+  color: red;
+  font-size: 100%;
+  margin-bottom: 5px;
+}
+.puntos{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.puntos .otrosBot{
+  background-color: black;
+  width: 30%;
+  font-size: 130%;
+}
+.bIniciar .boton{
+  background-image: url(../img/imagen1.jpg);
+  background-size: 100%;
+  float: right;
+  margin-top: 20px;
+  width: 40%;
+  height: 45px;
+  color: white;
+}
+.visible{
+    display: block;
+    visibility: visible;
+}
+.oculto{
+    display: none;
+    visibility: hidden;
+}
+.botReglas{
+  width: 40%;
+  background-color: darkgrey;
+  color: white;
+  font-size: 150%;
+}
+.classPopup{
+  font-size: 100%;
+  text-align: justify;
+}
+/*.seccionSup{
+  display: flex;
+  width: 100%;
+  height: 80px;
+}
+.botonSumar{
+  width: 17%;
+  height: 80px;
+  font-size: 250%;
+  background-color: darkgrey;
+  color: white;
+  text-align: center;
+}
+.nomEq{
+  width: 30%;
+  height: 70px;
+  font-size: 200%;
+  color: darkgrey;
+  text-align: center;
+  padding: 2% 0;
+}
+.seccionInf{
+  display: flex;
+  width: 100%;
+  height: 80px;
+}
+.botonRest{
+  width: 15%;
+  height: 80px;
+  font-size: 200%;
+  background-color: darkgrey;
+  color: white;
+  text-align: center;
+}
+.botFin{
+  width: 20%;
+  height: 80px;
+  font-size: 150%;
+  background-color: darkgrey;
+  color: white;
+  text-align: center;
+}
+.puntaje{
+  width: 25%;
+  height: 70px;
+  font-size: 150%;
+  color: darkgrey;
+  text-align: center;
+  padding: 6% 0;
+}
+.chicos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/*.linea{
+  width: 100%;
+  height: 50px;
+}
+.xLinea{
+  margin-left: 22%;
+  margin-right: 5%;
+  display: inline-block;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+}*/
+.puntosMax{
+  display: flex;
+  width: 100%;
+  color: white;
+  font-size: 100%;
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">-->
+
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- Color theme for statusbar -->
+    <!-- <meta name="theme-color" content="#2196f3"> -->
+    <meta name="color-scheme" content="light dark">
+
+    <!-- Your app title -->
+    <title>Anotador de Truco</title>
+    <!-- Path to Framework7 Library CSS -->
+    <link rel="stylesheet" href="lib/framework7/framework7-bundle.min.css">
+    <!-- Path to icons -->
+    <link rel="stylesheet" href="css/icons.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" media="only screen and (max-width: 480px)" href="css/app.css">
+    <link rel="stylesheet" media="only screen and (max-width: 960px)" href="css/app.css">
+</head>
+
+<body>
+    <div id="app">
+        <!-- Statusbar overlay -->
+        <div class="statusbar"></div>
+    
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+       
+            <!-- Top Navbar -->
+            <div class="navbar">
+                <div class="navbar-bg bg-color-black"></div>
+                <div class="navbar-inner">
+                    <div class="left"><i class="icon icon-back"></i></div>
+                    <div class="title text-color-white">Drago Anotador</div>
+                    <div class="right"><i class="icon icon-forward"></i></div>
+                </div>
+            </div>
+    
+            <!-- Toolbar -->
+            <div class="toolbar toolbar-bottom bg-color-black">
+                <div class="toolbar-inner">
+                <!-- Toolbar links -->
+                <input type="button" id="reglas" value="Reglas" href="#" data-popup=".my-popup" class="popup-open botReglas" style="width: 40%;">
+                <a href="#" class="link" style="width: 20%;"></a>
+                <a id="pageWeb" class="link" style="width: 40%;">Queres saber mas?</a>
+                </div>
+            </div>
+        
+        <!-- Initial Page, "data-name" contains page name -->
+            <div data-name="index" class="page">
+                <!-- Scrollable page content -->
+                <div class="page-content bg-color-black" style="background-image:url(img/Dragon2.jpg)">
+                    <div class="block">
+                        <div id="pantalla1">
+                            <div class="equipo">
+                                <input type="text" id="equipo1" class="contenedores bg-color-white" placeholder="Equipo 1" value="">
+                                <p id="error" class="errorEnRojo"></p>
+                                <input type="text" id="equipo2" class="contenedores bg-color-white" placeholder="Equipo 2" value="">
+                                <p id="error" class="errorEnRojo conten2"></p>
+                            </div>
+                            <div style="width: 100%;">
+                                <p id="aJugar" class="text-color-white text-align-center" style="width: 20%; margin-left: 40%; font-size: 100%;"></p>
+                            </div>
+                            <div class="puntos">
+                                <input  id="a24" type="button" class="otrosBot text-color-white" value="a 24 pts">
+                                <input  id="a30" type="button" class="otrosBot text-color-white" value="a 30 pts">
+                            </div>
+                            <div class="bIniciar">
+                                <input type="button" value="Iniciar" id="botInic" class="boton oculto text-color-white" style="padding-top: 10px; font-size: 150%;">
+                            </div>
+                        </div>
+
+            <!-- And somewhere in DOM -->
+                        <div class="popup my-popup">
+                            <div class="view">
+                                <div class="page">
+                                    <div class="navbar">
+                                        <div class="navbar-bg"></div>
+                                        <div class="navbar-inner">
+                                            <div class="title">Reglas</div>
+                                            <div class="right">
+                                                <!-- Link to close popup -->
+                                                <a class="link popup-close">Close</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="page-content block classPopup">
+                                        <h3>Reglas del Truco</h3>
+                                        <p>Se puede jugar entre dos (mano a mano), entre cuatro (dos parejas compiten entre sí) y entre seis (con dos equipos de 3 integrantes cada uno). Básicamente, el truco se juega a 24 o a 30 puntos divididos en lo que se llama “dos chicos” de 12 y 15 puntos cada uno.
+                                        Se juega en la mesa en el sentido de las agujas del reloj. Y en cada vuelta cada jugador cuenta con 3 cartas. Se jugarán 3 manos o rondas de una carta por jugador, y cada una tendrá un equipo ganador, que será del que puso la carta más alta en esa mano.
+                                        ¿Quién gana la vuelta? Siempre, el que gana 2 de las 3 manos o rondas de cartas, en cualquier orden. O el equipo que gana la primera mano si es que se produce un empate en la segunda o tercera.
+                                        Cada vez que termina una vuelta se anotan los puntos ganados por cada uno, se vuelve a barajar todo el mazo y reparte el jugador que está a la derecha de quién lo hizo anteriormente, siempre siguiendo la orientación de las agujas del reloj. Cada una de esas manos tiene, a su vez, dos posibilidades de sumar puntos y que surgen del envido y el truco:</p>
+                                        <h4>Envido</h4>
+                                        <p>No es obligatorio jugarlo. El envido se canta siempre en la primera mano. Y surge cuando se tienen dos cartas del mismo palo. El envido no querido suma un solo punto. El envido querido suma dos puntos al que gane. Y luego se dan una serie de posibles apuestas entre una pareja y otra (o en un mano a mano) subiendo la apuesta. Por ejemplo: real envido vale 3 ptos. Envido y Envido son 4 ptos. Envido y real envido son 5 ptos. Y la falta envido, son la cantidad de puntos que faltan para que el que va puntero termine el primer chico. Cualquiera de las anteriores no queridas se toma la suma anterior. Si hay empate entre dos rivales que cantaron envido, y tienen el mismo puntaje, gana siempre el que abrió la mano en esa vuelta. O sea: el que es mano, como se dice entre los jugadores.</p>
+                                        <h4>Truco</h4>
+                                        <p>Se puede cantar o no. Pero básicamente, el truco surge de las tres vueltas bajando cartas y quién resulta ganador. Supongamos que el partido está muy parejo y está tanto a tanto. Y se reciben bajas cartas. Pasa la primera mano. Pasa la segunda. Y nadie quiere cantar el truco en la tercera porque no se tienen buenas cartas. Pues bien: el que gane dos de las tres manos se lleva 1 pto. Cuando se canta el truco y es aceptado, el que gana dos de las manos se lleva 2 ptos. Pero al que canta truco, si es aceptado, su rival (o sus rivales) le puede cantar retruco, enseguida o más adelante, antes de jugar las últimas cartas. El retruco querido le da 3 ptos al que gane. Pero el otro rival, el que recibe el canto de quiero retruco, puede cantar luego: quiero vale cuatro. Y si se acepta, el que gane se llevará 4 ptos. Quien no acepte un truco pierde un pto. Quien no acepte un retruco pierde 2 ptos. Quien no acepte un quiero vale cuatro, pierde 3 ptos.</p>
+                                        <h4>Valores de las Cartas</h4>
+                                        <p>Las cartas del truco argentino se componen de 40 naipes españoles divididos en 4 palos: oros, copas, espadas y bastos. Cada uno de los palos tiene 10 números. El 1, el 2, el 3, el 4, el 5, el 6, el 7, el 10 (o sota), el 11 (o caballo) y el 12 (o rey). El valor de las cartas del truco argentino, en orden descendente por importancia, (o sea: cada carta que se ve en esta tabla le gana a la de abajo), es el siguiente:</p>
+                                        <ul>
+                                            <li>As, 1 o ancho de espadas. La carta que mata a todas en el truco. </li>
+                                            <li>As, 1 o ancho de bastos. Segunda carta de mayor poder.</li>
+                                            <li>7 de espadas. Tercera carta de mayor poder.</li>
+                                            <li>7 de oros. Cuarta carta de mayor poder.</li>
+                                            <li>Los 3 (cualquiera sea el palo, tienen el mismo valor).</li>
+                                            <li>Los 2 (cualquiera sea el palo, tienen el mismo valor).</li>
+                                            <li>As o 1 de oros y de copas. Llamados anchos falsos o “ases falsos”.</li>
+                                            <li>Los 12 (o reyes). (Todos los palos con el mismo valor).</li>
+                                            <li>Y desde los 11 van bajando su valor hasta llegar a los 4, pasando por as cartas que quedan sin nombrar</li>
+                                        </ul>
+                                            <p>A la hora de sumar los puntos del truco (uno de los tres que se puede jugar en cada mano), tener el 1 de espadas, el 7 de espadas y un 3 es una mano casi imposible de perder. Sin embargo, las cartas que suman poco para el truco, tienen mucho valor para el envido. Por ejemplo, si uno recibe el 7 de copas y el 6 de copas (dos cartas muy pobres para las manos del truco) y es mano, tiene 33 puntos para el envido y son ganadoras. O sea: un 7 y un 6 de copas o de bastos, nos pueden dar muchísimos puntos. Lo mismo un 6 y un 5 del mismo palo suman 31 puntos para un envido, que es una cifra muy fuerte.
+                                            El truco argentino está lleno de pequeños secretos que sirven a la hora de jugar. Por ejemplo: la gente que sabe jugar siempre dice que la primera (mano) vale doble. No es cierto, pero se le parece. Porque si se empata una segunda o tercera mano, el que ganó la primera se lleva los puntos.
+                                            Supongamos que uno recibe el ancho de espadas, y viene acompañado de dos 3. Ya sea un jugador, o entre los dos o tres jugadores del equipo. Tienen la carta más alta para ganar el truco, pero todavía no está ganado. Puesto que si sus rivales tienen el ancho de bastos y el 7 espadas, y juegan bien, ganarán seguro la vuelta. Pero siguiendo la idea de que la primera vale doble, en ese caso, es bueno poner el ancho de espadas en la primera para asegurar la mano. Y luego jugar los dos 3 en las siguientes manos. Habrá muchas posibilidades (es estadístico) que se pierda la segunda mano pero que se empate la tercera con el 3 y así se ganen los puntos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/framework7/framework7-bundle.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+</body>
+
+</html>
